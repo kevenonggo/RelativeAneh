@@ -41,11 +41,38 @@
         android:id="@+id/tv_copyright"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Copyright 2022 \n By Keven"
+        android:text="Copyright 2022 \n By You"
         android:gravity="center"
         android:layout_centerInParent="true"/>
 
+    <CheckBox
+        android:id="@+id/cb_ya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YA"
+        android:layout_alignParentBottom="true"/>
 
+    <CheckBox
+        android:id="@+id/cb_tidak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TIDAK"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/cb_ya"/>
 
+    <TextView
+        android:id="@+id/tv_saya_menyatakan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saya Menyatakan Data Ini : "
+        android:layout_marginBottom="2dp"
+        android:layout_above="@id/cb_ya"/>
 
+    <Spinner
+        android:id="@+id/sp_kemungkinan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cb_ya"
+        android:layout_toRightOf="@id/tv_saya_menyatakan"
+        android:entries="@array/arr_kemungkinan" />
 </RelativeLayout>
